@@ -1,0 +1,6 @@
+dependencies:
+- name: jupyterhub
+  repository: https://charts.bitnami.com/bitnami
+  version: 6.1.0
+digest: sha256:d8e593614b546199ca35202b6ef9b10a45d909eb4cab2c74645db843f4c2483f
+generated: "2024-03-20T23:25:18.148559079+09:00"

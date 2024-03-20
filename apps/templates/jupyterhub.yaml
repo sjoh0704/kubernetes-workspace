@@ -1,5 +1,5 @@
-{{ if .Values.keycloak.enabled }}
-{{ $module := "keycloak" }}
+{{ if .Values.jupyterhub.enabled }}
+{{ $module := "jupyterhub" }}
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -11,7 +11,7 @@ spec:
   destination:
     name: in-cluster
     namespace: {{ $module }}
-  project: {{ .Values.keycloak.project }}
+  project: {{ .Values.jupyterhub.project }}
   source:
     path: {{ $module }}
     repoURL: {{ .Values.global.repoURL }}

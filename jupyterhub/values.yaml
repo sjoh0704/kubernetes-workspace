@@ -1,0 +1,7 @@
+jupyterhub:
+  proxy:
+    ingress:
+      enabled: true
+      ingressClassName: "nginx"
+      hostname: jupyterhub.localhost
+      path: /
