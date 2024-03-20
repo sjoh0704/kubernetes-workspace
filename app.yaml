@@ -15,5 +15,4 @@ spec:
     repoURL: https://github.com/sjoh0704/kubernetes-workspace.git
     targetRevision: main
   syncPolicy:
-    automated:
-      prune: true
+    automated: {}
