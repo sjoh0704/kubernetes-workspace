@@ -1,0 +1,23 @@
+{{ if .Values.keycloak.enabled }}
+{{ $module := "keycloak" }}
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io 
+  name: {{ $module }}
+  namespace: argocd
+spec:
+  destination:
+    name: in-cluster
+    namespace: keycloak
+  project: {{ .Values.keycloak.project }}
+  source:
+    path: {{ $module }}
+    repoURL: {{ .Values.global.repoURL }}
+    targetRevision: {{ .Values.global.targetRevision }}
+    syncOptions:
+      - CreateNamespace=true
+    automated: 
+      prune: true
+{{ end }}

@@ -1,0 +1,20 @@
+argo-cd:
+
+  applicationSet:
+    enabled: false
+
+  dex:
+    enabled: false
+
+  notifications:
+    enabled: false
+
+  server:
+    # server.insecure: false가 동작을 안함
+    extraArgs:
+      - --insecure
+  
+    ingress:
+      enabled: true
+      ingressClassName: nginx
+      hostname: "argocd.localhost"

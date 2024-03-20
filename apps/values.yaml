@@ -1,0 +1,8 @@
+global:
+  repoURL: "https://github.com/sjoh0704/k8s-workspace.git"
+  targetRevision: "main"
+
+keycloak:
+  enabled: true
+  project: default
+

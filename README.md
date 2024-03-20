@@ -1,3 +1,21 @@
+## 순서
+1. ingress-nginx controller 설치
+2. argocd 설치
+
+
+
+### 1. ingress-nginx
+```
+helm -n kube-system install ingress-nginx ingress-nginx/ 
+```
+
+### 2. argocd
+```
+k create ns argocd
+helm -n argocd install argocd argo-cd/ 
+```
+
+
 ### keycloak
 ```
 kubectl create ns keycloak
