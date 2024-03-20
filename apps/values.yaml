@@ -6,3 +6,7 @@ keycloak:
   enabled: true
   project: default
 
+jupyterhub:
+  enabled: true
+  project: default
+
