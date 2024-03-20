@@ -2,11 +2,7 @@ keycloak:
   ingress:
     enabled: true
     ingressClassName: "nginx"
-    rules:
-      - host: 'keycloak.localhost'
-        paths:
-          - path: /
-            pathType: Prefix
+    hostname: keycloak.localhost
 
   auth:
     adminUser: admin
