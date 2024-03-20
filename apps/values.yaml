@@ -1,5 +1,5 @@
 global:
-  repoURL: "https://github.com/sjoh0704/k8s-workspace.git"
+  repoURL: "https://github.com/sjoh0704/kubernetes-workspace.git"
   targetRevision: "main"
 
 keycloak:
