@@ -1,0 +1,6 @@
+dependencies:
+- name: datahub
+  repository: https://helm.datahubproject.io/
+  version: 0.4.0
+digest: sha256:9e1e2ce2c3c77ff8352ce4421c3fe25bccb95ea6e019b3acfa8435d751107c53
+generated: "2024-03-07T20:32:27.396478941+09:00"

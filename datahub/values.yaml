@@ -1,0 +1,7 @@
+datahub:
+  datahub-frontend:
+    service:
+      type: NodePort
+      port: 30000
+    
+    

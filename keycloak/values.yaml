@@ -1,0 +1,20 @@
+keycloak:
+  auth:
+    adminUser: admin
+    adminPassword: admin
+  
+  service:
+    type: NodePort
+    nodePorts: 
+      http: 30080
+      https: 30443
+  
+  postgresql:
+    enabled: true
+    auth:
+      postgresPassword: keycloak
+      username: keycloak
+      database: keycloak
+    primary:
+      persistence:
+        enabled: false
